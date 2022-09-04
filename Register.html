@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="registerstyle.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet"
+    />
+    <title>Register for more services</title>
+  </head>
+  <header>
+      <nav class="navbar">
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="Contactme.html">Contact Me</a></li>
+        <li><a href="Register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      </nav>
+    </header>
+  <body>
+    <form action="">
+      <div class="regform">
+          <h3>Register Here</h3>
+          <p>Fill the form below to register for any of my services</p>
+          
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  name="First Name"
+                  class="form-input"
+                  minlength="3"
+                  placeholder="enter your first name"
+                  required
+                />
+              
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  name="Last Name"
+                  class="form-input"
+                  minlength="3"
+                  placeholder="enter your surname"
+                  required
+                />
+              
+                <label for="pnum">Phone Number</label>
+                <input
+                  type="text"
+                  name="Phone Number"
+                  class="form-input"
+                  placeholder="0704-607-0418"
+                  required
+                  pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+                />
+              
+                <label>What is your Gender?</label>
+                <select class="form-input" id="dropdown" name="Gender" required>
+                  <option value="1" disabled hidden selected>Gender</option>
+                  <option value="2">Male</option>
+                  <option value="3">Female</option>
+                  <option value="4">Prefer not to say</option>
+                </select>
+              
+                <label for="cty">Country</label>
+                <input class="form-input" type="text" placeholder="country of residence"
+                required />
+              
+                <label for="state">State/Province</label>
+                <input class="form-input" type="text" placeholder="state of resideence" required />
+              
+                <label for="email">Email Address</label>
+                <input type="email" class="form-input" placeholder="enter valid email" required minlength="9" />
+              
+                <label for="pwd">New Password</label>
+                <input
+                  type="password"
+                  class="form-input"
+                  placeholder="choose password"
+                  required
+                  pattern="(?=.*\d)(?=.*[a-z])(?.*[A-Z].(8,)"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                />
+              
+                <label for="pwd2">Confirm Password</label>
+                <input 
+                  type="password"
+                  class="form-input"
+                  required
+                  placeholder="input password again"
+                  >
+              
+          <button type="submit">Register</button>
+      </div>
+    </form>
+    
+  </body>
+</html>

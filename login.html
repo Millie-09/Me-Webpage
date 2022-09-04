@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      form {
+        border: 3px solid #f1f1f1;
+        width: 50%;
+        margin: 50px auto;
+      }
+      .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#141e30, #243b55);
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0;
+}
+
+.navbar ul li {
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .2s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: #243b55;
+    box-shadow: 0 0 10px oldlace;
+   
+}
+      body{
+        background: linear-gradient(#141e30, #243b55);
+        font-family: "poppins", sans-serif;
+        color: #fff
+      }
+
+      .login-box{
+        top:50%;
+        left: 50%;
+        background-color:bisque;
+        padding: 20px;
+        background: rgba(0, 0, 0, .6);
+        border-radius: 10px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+      }
+
+      .input-box {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 30px 0 10px 0;
+      }
+
+      button {
+        background-color: rgb(63, 161, 172);
+        color: white;
+
+        padding: 12px 20px;
+        margin: 8px 0 5px 0;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+    </style>
+  </head>
+  <header>
+      <nav class="navbar">
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="Contactme.html">Contact Me</a></li>
+        <li><a href="Register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      </nav>
+    </header>
+  <body>
+    <form action="#">
+      <div class="login-box">
+        <h2>Hi! Welcome Back....</h2>
+        <label for="username">Username</label>
+        <input
+          class="input-box"
+          type="text"
+          name="username"
+          placeholder="Enter Username"
+          required
+          minlength="8"
+        />
+
+        <label for="password">Password</label>
+        <input
+          class="input-box"
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          required
+          pattern="[a-z 0-5]{8,}"
+        />
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+      </div>
+    </form>
+  </body>
+</html>

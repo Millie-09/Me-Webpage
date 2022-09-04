@@ -1,0 +1,118 @@
+form {
+    border: 3px solid #f1f1f1;
+    width: 50%;
+    margin: 50px auto;
+  }
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#141e30, #243b55);
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0;
+}
+
+.navbar ul li {
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .2s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: #243b55;
+    box-shadow: 0 0 10px oldlace;
+   
+}
+  body{
+    background: linear-gradient(#141e30, #243b55);
+    font-family: "poppins", sans-serif;
+    color: #fff;
+  }
+
+  .contactme-form{
+    top:50%;
+    left: 50%;
+    background-color:bisque;
+    padding: 20px;
+    background: rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "poppins", sans-serif;
+  }
+
+  h2, p {
+    text-align: center;
+    margin: 30px 0 10px 0;
+  }
+
+  button {
+    background-color: rgb(63, 161, 172);
+    color: white;
+    font-size: 20px;
+    padding: 12px 20px;
+    margin: 8px 0 5px 0;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+    color: palevioletred;
+  }
+
+  /* socials */
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  .socials ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0;
+  }
+  
+  .socials ul li {
+    font-family: "poppins", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .socials ul li a{
+      text-decoration:none;
+      color: white;
+      padding: 8px 25px;
+      transition: all .2s ease;
+  }
+  
+  .socials ul li a:hover{
+      background-color: paleturquoise;
+      color: palevioletred;
+      box-shadow: 0 0 10px oldlace;
+      border-radius: 10px;
+  }
